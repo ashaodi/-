@@ -64,14 +64,7 @@ n = neuralNetwork(input_nodes, hidden_nodes, output_nodes, learning_rate)
 training_data_file = open("D:/西二Python/DigitalRecognizerData/train.csv", 'r')
 training_data_list = training_data_file.readlines()
 training_data_file.close()
-# print(n.query([1.0, 0.5, -1.5]))
-# n.train([1.0, 0.5, 1.5],[1.0, 0.5, 1.5])
-# n.train([2.0, 0.6, 1.6],[2.0, 0.6, 1.6])
-# n.train([1.9, 10.5, 8],[1.9, 10.5, 8])
-# n.train([20.0, 0.66, 1.98],[20.0, 0.66, 1.98])
- 
-# print(n.query([2.0, 0.5, 1.5]))
-# numpy.random.rand(3, 3) - 0.5
+
 epochs = 2
 for e in range(epochs):
     for record in training_data_list:
